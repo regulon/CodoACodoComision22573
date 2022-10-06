@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    padding: 0 90px;
+}
+
+#color {
+    color: rgb(4, 189, 4);
+}
+
+#color:hover {
+    color: rgb(0, 255, 0);
+}
+button.ticket{
+    background-color: rgb(56, 177, 4);
+    margin-top: 5px;
+}
+button.ticket:hover{
+    background-color: rgb(149, 244, 107);
+    color: black;
+}
+button.borador{
+    margin-top: 5px;
+}
+.imagen{
+    background: rgba(0, 0, 0, 0.534) url('/img/ba1\ 1366x768px.jpg'); /*al usar esta opción hay que combinarla con "background-blend-mode: darken;" para oscurecer la imagen */
+    /* background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/img/ba1\ 1366x768px.jpg');*/ /*al usar esta opción se debe comentar "background-blend-mode: darken;" ya que con "linear-gradient" se consigue el efecto de imagen oscura*/
+    height: 768px;
+    width: 100%;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    width: 100%;
+    background-blend-mode: darken;
+    color: #fff;
+    text-align: right;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-top: 25%;
+}
+.imagen h1{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.imagen p{
+    font-size: 15px;
+}
+.card{
+    width: 18rem;
+}
+.badge-warning{
+    background-color: rgb(255, 213, 0);
+    color: black;
+}
+.badge-danger{
+    background-color: rgb(203, 83, 83);
+    color: white;
+}
+.badge-secondary{
+    background-color: grey;
+}
+.badge-primary{
+    background-color: rgb(22, 121, 233);
+}
+.card-text{
+    text-align: justify;
+}
+.background{
+    width: 100%;
+    height: auto;
+    background-image: url('/img/grey\ backgroundcrop.jpg');
+    color: white;
+    text-align:justify;
+}
+div.background p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+div.background h2{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+#enviar{
+    background-color: rgb(198, 218, 85);
+}
+#enviar:hover{
+    background-color: rgb(243, 178, 92);
+}
+#oradores, #orador{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.imagen h1{
+    text-transform: capitalize;
+}
+#estilo1, #estilo2{
+    text-transform: uppercase;
+
+}
+#decora-puntos{
+    text-decoration:underline dotted;
+}
+div.area label span{
+    color: grey;
+    padding-left: 10px;
+}
+#colorear{
+    background-color: rgb(163, 192, 68);
+}
+#colorear:hover{
+    background-color: orange;
+    color: black;
+}
+.d-block{
+    justify-content:center;
+}
+
+/* Form */
+
+.input-group{
+    
+    width: 50%;
+}
+/* Footer */
+
+.bar{
+    background-color: rgb(54, 79, 94);
+    margin-top: 10px;
+}
+.linea{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align:right;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 476px) and (max-width: 991px){
+    .carro{
+        flex-direction: column;
+    }
+    .imagen{
+        padding-left: 40%;
+        padding-right: 12%;
+        padding-top: 20%;
+        height: 600px;
+    }
+    .imagen h1{
+        font-size: 30px;
+    }
+    .imagen p{
+        font-size: 14px;  
+    }
+    .background h2{
+        font-size: 40px;
+    }
+    .background p{
+        font-size: 3vw; 
+    }
+    .conoce{
+        margin-bottom: 20px;
+        font-size: 4vw;
+        padding: 3px;
+    }
+    @media screen and (min-width: 488px) and (max-width:991px) {
+        .conoce{
+            margin-bottom: 20px;
+            font-size: 15px;
+            padding: 3px;
+        }
+    }
+    
+    .ticket, .borador{
+        font-size: 12px;
+    }
+}
+@media screen and  (min-width: 281px) and (max-width: 475px){
+    .carro{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .imagen{
+        padding-left: 20%;
+        padding-right: 12%;
+        padding-top: 30%;
+        height: 500px;
+    }
+    .imagen h1{
+        font-size: 30px;
+    }
+    .imagen p{
+        font-size: 14px;  
+    }
+    .background h2{
+        font-size: 30px;
+    }
+    .background p{
+        font-size: 3.8vw; 
+    }
+    .conoce{
+        margin-bottom: 10px;
+        font-size: 4vw;
+        padding: 3px;
+    }
+    .ticket, .borador{
+        font-size: 12px;
+    }
+    .botones{
+        flex-direction: column;
+    }
+}
+@media screen and  (max-width: 280px){
+    .carro{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .imagen{
+        padding-left: 20%;
+        padding-right: 12%;
+        padding-top: 5vh;
+        height: 400px;
+    }
+    .imagen h1{
+        font-size: 25px;
+    }
+    .imagen p{
+        font-size: 4.5vw;  
+    }
+    .background h2{
+        font-size: 20px;
+    }
+    .background p{
+        font-size: 4vw; 
+    }
+    .conoce{
+        margin-bottom: 10px;
+        font-size: 4vw;
+        padding: 3px;
+    }
+    .card-text{
+        font-size: 4.5vw;
+    }
+    .ticket, .borador{
+        font-size: 4vw;
+    }
+    .botones{
+        flex-direction: column;
+    }
+}
