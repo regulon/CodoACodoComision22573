@@ -32,17 +32,17 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li class="nav-item">
-                <a class="dropdown-item" href="#">Steve Jobs</a>
-                <a class="dropdown-item" href="#">Bill Gates</a>
-                <a class="dropdown-item" href="#">Ada Lovelace</a>
+                <a class="dropdown-item" href="#steve">Steve Jobs</a>
+                <a class="dropdown-item" href="#gates">Bill Gates</a>
+                <a class="dropdown-item" href="#ada">Ada Lovelace</a>
               </li>
             </ul>
           <li class="nav-item">
-            <a class="nav-link" href="#">El lugar y la fecha</a>
+            <a class="nav-link" onclick="lugarYFecha()">El lugar y la fecha</a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conviértete en orador</a>
+            <a class="nav-link" href="#orador">Conviértete en orador</a>
           <li class="nav-item">
-            <a class="nav-link" id="color" href="#">Comprar tickets</a>
+            <a class="nav-link" id="color" href="/ticket.html">Comprar tickets</a>
         </ul>
       </div>
     </div>
@@ -50,16 +50,16 @@
   <!-- Header -->
   <header>
     <div class="imagen">
-      <h1>conf bs as</h1>
+      <h1 id="conferencia">conf bs as</h1>
       <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
         experiencia de los expertos que están cambiando el futuro del internet. Ven a conocer a miembros del evento, a
         otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!.</p>
       <div class="btn-group botones" role="group">
         <div class="btn-group me-2 boton" role="group" aria-label="Second group">
-          <button type="button" class="btn btn-outline-light borador">Quiero se orador</button>
+          <button type="button" onclick="location.href='/index.html#orador';" class="btn btn-outline-light borador">Quiero se orador</button>
         </div>
         <div class="btn-group me-2 boton" role="group" aria-label="Third group">
-          <button type="button" class="btn btn-success ticket">Comprar tickets</button>
+          <button type="button" onclick="location.href='/ticket.html';" class="btn btn-success ticket">Comprar tickets</button>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
   <!-- Cards -->
   <div class="container d-flex justify-content-center flex-wrap gap-2 mb-3">
     <div class="card pe-5px">
-      <img class="card-img-top" src="./img/SteveJobs.jpg" alt="Card image cap">
+      <img class="card-img-top" src="./img/SteveJobs.jpg" alt="Card image cap" id="steve">
       <div class="card-body">
         <span class="badge badge-warning">JavaScript</span>
         <span class="badge badge-primary">React</span>
@@ -81,7 +81,7 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="./img/bill.jpg" alt="Card image cap">
+      <img class="card-img-top" src="./img/bill.jpg" alt="Card image cap" id="gates">
       <div class="card-body">
         <span class="badge badge-warning">JavaScript</span>
         <span class="badge badge-primary">React</span>
@@ -91,7 +91,7 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="./img/ada.jpeg" alt="Card image cap">
+      <img class="card-img-top" src="./img/ada.jpeg" alt="Card image cap" id="ada">
       <div class="card-body">
         <span class="badge badge-secondary">Negocios</span>
         <span class="badge badge-danger">Startups</span>
@@ -128,7 +128,7 @@
           refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una
           ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
         <div class=" text-start">
-          <button type="button" class="btn btn-outline-light ms-4 conoce">Conocé más</button>
+          <button type="button" onclick="location.href='https://es.wikipedia.org/wiki/Honolulu';" class="btn btn-outline-light ms-4 conoce">Conocé más</button>
         </div>
       </div>
     </div>
@@ -192,5 +192,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script src="/TrabajoIntegradorFrontEnd/js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
